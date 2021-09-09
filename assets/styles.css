@@ -18,6 +18,9 @@ header {
 }
 
 
+/* -------------------------------------------- */
+
+
 /*  Header Styles   */
 
 
@@ -67,4 +70,33 @@ header h1 {
     font-size: 2.5rem;
     color: #fff;
     font-weight: 400;
+}
+
+
+/* --------------------------------------------- */
+
+
+/*   Header Content */
+
+header div.search-box {
+    background-color: #fff;
+    display: ruby-base-container;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    border-radius: 10px;
+}
+
+header div.search-box div.select i {
+    color: #F57082;
+}
+
+header div.search-box div.input {
+    color: #828282b7;
+}
+
+header div.search-box div.seperator {
+    height: 50%;
+    background-color: #8282829b;
+    width: 2px;
 }
