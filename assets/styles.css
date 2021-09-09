@@ -4,11 +4,13 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Pacifico;
+    border: none;
 }
 
 * :focus {
     outline: none;
     border: none;
+    /* border: 10px solid yellow; */
 }
 
 a {
@@ -83,6 +85,15 @@ header h1 {
 
 /*   Header Content */
 
+header div.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 70%;
+    border-radius: 10px;
+}
+
 div.search-box div {
     display: flex;
     align-items: center;
@@ -90,13 +101,8 @@ div.search-box div {
     margin: 0px 50px;
 }
 
-header div.search-box {
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 70%;
-    border-radius: 10px;
+header div.search-box i {
+    margin: 10px;
 }
 
 header div.search-box div.select i {
