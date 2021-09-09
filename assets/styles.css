@@ -6,6 +6,11 @@
     font-family: Pacifico;
 }
 
+* :focus {
+    outline: none;
+    border: none;
+}
+
 a {
     color: unset;
 }
@@ -78,9 +83,16 @@ header h1 {
 
 /*   Header Content */
 
+div.search-box div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0px 50px;
+}
+
 header div.search-box {
     background-color: #fff;
-    display: ruby-base-container;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 70%;
@@ -99,4 +111,12 @@ header div.search-box div.seperator {
     height: 50%;
     background-color: #8282829b;
     width: 2px;
+}
+
+header div.search-box div.input {
+    flex-grow: 80;
+}
+
+header div.search-box div.input input {
+    width: 100%;
 }
