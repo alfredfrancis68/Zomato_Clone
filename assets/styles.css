@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: Pacifico;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: none;
 }
 
@@ -11,6 +11,10 @@
     outline: none;
     border: none;
     /* border: 10px solid yellow; */
+}
+
+body {
+    background-color: #e9f5e4;
 }
 
 a {
@@ -47,16 +51,17 @@ nav .nav-item {
 
 nav div.container {
     display: flex;
+    justify-content: space-block;
 }
 
 nav div.nav-item.app {
     font-size: 1.2rem;
-    font-weight: 800;
+    font-weight: 450;
 }
 
 nav div.nav-item {
-    font-size: 1.2rem;
-    font-weight: 200;
+    font-size: 1.4rem;
+    font-weight: 350;
 }
 
 header div.content {
@@ -70,13 +75,13 @@ header div.content {
 }
 
 header img.logo {
-    width: 300px;
+    width: 350px;
 }
 
 header h1 {
     font-size: 2.5rem;
     color: #fff;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
@@ -106,7 +111,7 @@ header div.search-box i {
 }
 
 header div.search-box div.select i {
-    color: #F57082;
+    color: #77e648;
 }
 
 header div.search-box div.input {
@@ -123,6 +128,109 @@ header div.search-box div.input {
     flex-grow: 80;
 }
 
+header div.search-box div.select select {
+    flex-grow: 1;
+    font-size: 1rem;
+    align-self: center;
+}
+
 header div.search-box div.input input {
     width: 100%;
+    font-size: 1rem;
+    align-self: center;
+}
+
+
+/* Header section complete------------------- */
+
+
+/*  Nearby places section  */
+
+section.nearby {
+    min-height: 40vh;
+}
+
+section.nearby div.container {
+    width: 90%;
+    margin: 0px auto;
+    /* background-color: #fff; */
+    text-align: center;
+    padding: 40px 0px;
+}
+
+section.nearby div.container h3 {
+    /* background-color: #fff; */
+    font-size: 2.2rem;
+    font-weight: unset;
+}
+
+section.nearby div.box {
+    max-width: 25%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+section.nearby div.box:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+
+/*    Apps section   */
+
+section.app {
+    min-height: 300px;
+    background-color: #e9f5e4;
+}
+
+section.app div.container {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.app div.container img {
+    max-width: 300px;
+    display: block;
+}
+
+section.app div.container div.form {
+    max-width: 485px;
+}
+
+section.app div.container div.form h3 {
+    font-size: 2.5rem;
+}
+
+section.app div.container div.form small {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #393737;
+    margin: 20px 0px;
+}
+
+
+/*   Radio button styles  */
+
+
+/*   Tomorrow   */
+
+
+/* --------------------------------------- */
+
+section.app div.input {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
