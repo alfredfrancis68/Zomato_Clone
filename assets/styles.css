@@ -545,7 +545,9 @@
         color: #fff;
     }
     
-    footer div.bottom-message h2 a:hover {
+    footer div.bottom-message h2 {}
+    
+    footer div.bottom-message h2:hover {
         color: rgb(10, 170, 117);
     }
     /*         FOOTER SECTION OVER         */
