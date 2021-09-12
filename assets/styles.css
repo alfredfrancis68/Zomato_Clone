@@ -1,236 +1,526 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: none;
-}
-
-* :focus {
-    outline: none;
-    border: none;
-    /* border: 10px solid yellow; */
-}
-
-body {
-    background-color: #e9f5e4;
-}
-
-a {
-    color: unset;
-}
-
-header {
-    background-image: url('../assets/images/hero.png');
-    background-position: center;
-    background-size: cover;
-    height: 75vh;
-}
-
-
-/* -------------------------------------------- */
-
-
-/*  Header Styles   */
-
-
-/*   Navbar Styles  */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding: 25px 0px;
-}
-
-nav .nav-item {
-    color: #fff;
-}
-
-nav div.container {
-    display: flex;
-    justify-content: space-block;
-}
-
-nav div.nav-item.app {
-    font-size: 1.2rem;
-    font-weight: 450;
-}
-
-nav div.nav-item {
-    font-size: 1.4rem;
-    font-weight: 350;
-}
-
-header div.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 70%;
-    width: 80%;
-    margin: 0px auto;
-}
-
-header img.logo {
-    width: 350px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: #fff;
-    font-weight: 300;
-}
-
-
-/* --------------------------------------------- */
-
-
-/*   Header Content */
-
-header div.search-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    width: 70%;
-    border-radius: 10px;
-}
-
-div.search-box div {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    margin: 0px 50px;
-}
-
-header div.search-box i {
-    margin: 10px;
-}
-
-header div.search-box div.select i {
-    color: #77e648;
-}
-
-header div.search-box div.input {
-    color: #828282b7;
-}
-
-header div.search-box div.seperator {
-    height: 50%;
-    background-color: #8282829b;
-    width: 2px;
-}
-
-header div.search-box div.input {
-    flex-grow: 80;
-}
-
-header div.search-box div.select select {
-    flex-grow: 1;
-    font-size: 1rem;
-    align-self: center;
-}
-
-header div.search-box div.input input {
-    width: 100%;
-    font-size: 1rem;
-    align-self: center;
-}
-
-
-/* Header section complete------------------- */
-
-
-/*  Nearby places section  */
-
-section.nearby {
-    min-height: 40vh;
-}
-
-section.nearby div.container {
-    width: 90%;
-    margin: 0px auto;
-    /* background-color: #fff; */
-    text-align: center;
-    padding: 40px 0px;
-}
-
-section.nearby div.container h3 {
-    /* background-color: #fff; */
-    font-size: 2.2rem;
-    font-weight: unset;
-}
-
-section.nearby div.box {
-    max-width: 25%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 15px;
-    font-size: 1.2rem;
-    margin-top: 5%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    width: 70%;
-    border-radius: 10px;
-}
-
-section.nearby div.box:hover {
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-
-
-/*    Apps section   */
-
-section.app {
-    min-height: 300px;
-    background-color: #e9f5e4;
-}
-
-section.app div.container {
-    width: 70%;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-section.app div.container img {
-    max-width: 300px;
-    display: block;
-}
-
-section.app div.container div.form {
-    max-width: 485px;
-}
-
-section.app div.container div.form h3 {
-    font-size: 2.5rem;
-}
-
-section.app div.container div.form small {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: 100;
-    color: #393737;
-    margin: 20px 0px;
-}
-
-
-/*   Radio button styles  */
-
-
-/*   Tomorrow   */
-
-
-/* --------------------------------------- */
-
-section.app div.input {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: none;
+    }
+    
+    * :focus {
+        outline: none;
+        border: none;
+        /* border: 10px solid yellow; */
+    }
+    
+    body {
+        background-color: #e9f5e4;
+    }
+    
+    a {
+        color: unset;
+    }
+    
+    header {
+        background-image: url('../assets/images/hero.png');
+        background-position: center;
+        background-size: cover;
+        height: 75vh;
+    }
+    /*             HEADER STYLES             */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /*             NAVBAR STYLES             */
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 25px 0px;
+    }
+    
+    nav .nav-item {
+        color: #fff;
+    }
+    
+    nav div.container {
+        display: flex;
+        /* justify-content: space-block; */
+    }
+    
+    nav div.nav-item.app {
+        font-size: 0.9rem;
+        font-weight: 450;
+    }
+    
+    nav div.nav-item {
+        font-size: 1.4rem;
+        font-weight: 350;
+    }
+    
+    header div.content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70%;
+        width: 80%;
+        margin: 0px auto;
+    }
+    
+    header img.logo {
+        width: 350px;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 300;
+    }
+    /* --------------------------------------*/
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /*              HEADER CONTENT           */
+    
+    header div.search-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 70%;
+        border-radius: 10px;
+    }
+    
+    div.search-box div {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        margin: 0px 50px;
+    }
+    
+    header div.search-box i {
+        margin: 10px;
+    }
+    
+    header div.search-box div.select i {
+        color: #77e648;
+    }
+    
+    header div.search-box div.input {
+        color: #828282b7;
+    }
+    
+    header div.search-box div.seperator {
+        height: 50%;
+        background-color: #8282829b;
+        width: 2px;
+    }
+    
+    header div.search-box div.input {
+        flex-grow: 80;
+    }
+    
+    header div.search-box div.select select {
+        flex-grow: 1;
+        font-size: 1rem;
+        /* align-self: center; */
+        color: #757575;
+    }
+    
+    header div.search-box div.input input {
+        width: 100%;
+        font-size: 1rem;
+        align-self: center;
+    }
+    /*         HEADER SECTION COMPLETE       */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /*        NEARBY SECTION COMPLETE        */
+    
+    section.nearby {
+        min-height: 40vh;
+    }
+    
+    section.nearby div.container {
+        width: 90%;
+        margin: 0px auto;
+        /* background-color: #fff; */
+        text-align: center;
+        padding: 40px 0px;
+    }
+    
+    section.nearby div.container h3 {
+        /* background-color: #fff; */
+        font-size: 2.2rem;
+        font-weight: unset;
+    }
+    
+    section.nearby div.box {
+        max-width: 25%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 15px;
+        font-size: 1.2rem;
+        margin-top: 5%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        width: 70%;
+        border-radius: 10px;
+    }
+    
+    section.nearby div.box:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    }
+    /*              APP SECTION              */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    
+    section.app {
+        min-height: 300px;
+        background-color: #e9f5e4;
+    }
+    
+    section.app div.container {
+        width: 70%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    section.app div.container img {
+        max-width: 300px;
+        display: block;
+    }
+    
+    section.app div.container div.form {
+        max-width: 485px;
+    }
+    
+    section.app div.container div.form h3 {
+        font-size: 2.5rem;
+    }
+    
+    section.app div.container div.form small {
+        display: block;
+        font-size: 1.1rem;
+        font-weight: 100;
+        color: #393737;
+        margin: 20px 0px;
+    }
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /*          RADIO BUTTON STYLES          */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    
+    section.app div.input {
+        width: 100%;
+        display: flex;
+        height: 50px;
+        align-items: center;
+    }
+    
+    section.app div.input input {
+        flex-grow: 70;
+        background-color: #fff;
+        border: 1px solid #cfcfcf;
+        font-size: 1.2rem;
+        padding-left: 10px;
+        border-radius: 5px;
+        height: 90%;
+        margin: 0px 10px 0px 0px;
+    }
+    
+    section.app div.input button {
+        background-color: #ed5a6b;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: 100;
+    }
+    
+    section.app div.form div.download {
+        margin: 20px 0px;
+        font-weight: 100;
+        color: grey;
+    }
+    
+    section.app div.form div.download div {
+        margin: 5px;
+    }
+    
+    section.app div.form div.download div img {
+        max-width: 150px;
+        display: inline-block;
+        margin: 5px 5px;
+    }
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /*          SECTION OPTIONS              */
+    
+    section.options {
+        min-height: 60h;
+    }
+    
+    section.options div.container {
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    section.options div.container h2 {
+        font-size: 2rem;
+    }
+    
+    section.options div.container h3 {
+        font-size: 1.6rem;
+    }
+    
+    section.options div.container div {
+        margin-top: 30px;
+    }
+    
+    section.options div.container div ul {
+        margin-top: 25px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section.options div.container div ul li {
+        margin: 3px 10px;
+        color: grey;
+        font-size: 1.1rem;
+        font-weight: 100;
+    }
+    
+    section.options div.container div h3 {
+        color: rgb(94, 91, 91);
+    }
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /* ------------------------------------- */
+    /*        FOOTER SECTION STARTED         */
+    
+    footer {
+        background-color: #fff;
+        position: relative;
+        left: 0px;
+        margin: 0px auto;
+        bottom: 0px;
+        width: 100%;
+    }
+    
+    footer div.zomatoandflags {
+        display: flex;
+        justify-content: space-between;
+        font-size: x-large;
+    }
+    
+    footer div.zomatoandflags div.zomato {
+        display: flex;
+        margin-left: 155px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        justify-content: left;
+        font-weight: 800;
+        font-family: 'Yeseva One', cursive;
+    }
+    
+    footer div.zomatoandflags div.flags {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        margin-bottom: 30px;
+        margin-right: 50px;
+    }
+    
+    footer div.zomatoandflags div.flags div.usa {
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 30px;
+        border: solid 1px black;
+        width: 140px;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    footer div.zomatoandflags div.flags div.usa img.usaflag {
+        width: 40px;
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    footer div.zomatoandflags div.flags div.english {
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 30px;
+        padding: 5px;
+        border: solid 1px black;
+        width: 140px;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    footer div.footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    footer li {
+        font-family: 'Kaisei HarunoUmi', serif;
+    }
+    
+    footer h4 {
+        color: black;
+    }
+    
+    footer ol {
+        list-style: none;
+        color: gray;
+    }
+    
+    footer div.column1 {
+        display: inline-block;
+    }
+    
+    footer div.column2 {
+        display: inline-block;
+    }
+    
+    footer div.column3 {
+        display: inline-block;
+    }
+    
+    footer div.column4 {
+        display: inline-block;
+    }
+    
+    footer div.column5 {
+        display: inline-block;
+    }
+    
+    footer div.column5 div.social-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    footer div.column5 div.social-links div.sm-icons {
+        display: flex;
+        width: 70px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    footer div.column5 div.social-links div.appstore img.appstore-image {
+        width: 160px;
+        height: 50px;
+        display: block;
+    }
+    
+    footer div.column5 div.social-links div.playstore img.playstore-image {
+        width: 160px;
+        height: 50px;
+        display: block;
+    }
+    
+    footer div.bottom-message {
+        color: gray;
+        margin-left: 140px;
+        font-family: 'Kaisei HarunoUmi', serif;
+        font-size: small;
+    }
+    /*         FOOTER SECTION OVER         */
